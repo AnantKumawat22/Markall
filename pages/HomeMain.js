@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Homemain.module.css';
-import ContactNow from './ContactNow';
-import Navbar from './NavBar';
+import ContactNow from '../components/ContactNow';
+import Navbar from '../components/Navbar.js';
 import Link from 'next/link';
 import Image from 'next/image';
 

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Script from 'next/script';
-import HomeMain from '../components/HomeMain';
+import HomeMain from './HomeMain';
 
 export default function Home() {
   return (
