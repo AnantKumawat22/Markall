@@ -4,6 +4,8 @@ import styles from '../styles/ContactNow.module.css';
 
 const ContactNow = () => {
 
+    const host = "https://markall.vercel.app";
+    // const host = "";
     const [contactdata, setcontactdata] = useState({
         name: "",
         email: "",
@@ -14,7 +16,7 @@ const ContactNow = () => {
     const formSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch(`/api/contact`, {
+        const response = await fetch(`${host}/api/contact`, {
             method: 'POST',
             body: JSON.stringify({ 
                 name: contactdata.name, 
