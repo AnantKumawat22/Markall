@@ -1,0 +1,172 @@
+.getStartedDiv{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    min-height: 80vh;
+    justify-content: space-around;
+    border-bottom-left-radius: 140px;
+    padding: 70px 40px;
+    flex-direction: row;
+}
+
+.getStartedDiv1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.getStartedDiv1 p{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.getStartedDiv1 span{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btnDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.btnGetStarted{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #7CEDA1;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.watchDemo{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.getStartedDiv2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.marketingImg{
+    object-fit: cover;
+    width: 478px;
+    height: 286px;
+}
+
+/*Section 2*/
+
+.ourFeaturesDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.ourFeaturesDiv1, .happyCstmDiv{
+    display: flex;
+    min-height: 500px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.knowYourAudienceDiv p, .happyCstmDiv1 p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.knowYourAudienceDiv h1, .happyCstmDiv1 h1{
+    font-size: 50px;
+}
+
+.knowYourAudienceDiv, .happyCstmDiv1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.DesciptionDiv, .happyCstmDescDiv{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.DesciptionDiv p, .happyCstmDescDiv p{
+    font-size: 20px;
+}
+
+.ourFeaturesDiv2{
+    display: flex;
+    padding: 20px 20px;
+    background-color: #F1F1F1;;
+    flex-direction: row;
+    border-radius: 20px;
+    min-height: 500px;
+    justify-content: space-around;
+}
+
+.savePreciousTimeDiv{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.savePreciousTimeDiv p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.savePreciousTimeDiv h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.savePreciousTimeDiv a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.savePreciousTimeImgDiv{
+    width:40%;
+    display: flex;
+    align-items: center;
+}
+
+.happyCstmDescDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.happyCstmDescDiv1{
+    margin-left: 10px;
+    padding-top: 170px;
+}
+
+.happyCstmDescDiv1 p{
+    margin-bottom: 20px;
+}
