@@ -45,7 +45,7 @@ const HomeMain = () => {
             <Link href="#">Learn More <i className={`fas fa-long-arrow-alt-right`}></i></Link>
           </div>
           <div className={styles.savePreciousTimeImgDiv}>
-            <Image src='/automation1.png' alt="" className={styles.marketingImg} width={578} height={386}/>
+            <Image src='/automation1.png' priority alt="" className={styles.marketingImg} width={578} height={386}/>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ const HomeMain = () => {
           <h1>What our customers say about us</h1>
         </div>
         <div className={styles.happyCstmDescDiv}>
-          <Image src='/vector1.png' alt="" style={{marginRight: '10px'}} width={60} height={60}/> 
+          <Image src='/vector1.png' priority alt="" style={{marginRight: '10px'}} width={60} height={60}/> 
           <div className={styles.happyCstmDescDiv1}>
             <p>Lorem ipsum dolor sit amet consectetur. In praesent ac sit scelerisque lacus. Faucibus tincidunt commodo mi.</p>
             <h1>Jane Doe</h1>
