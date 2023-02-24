@@ -40,21 +40,21 @@ const ContactNow = () => {
         <div className={styles.contactDetails}>
             <div>
                 <h1>
-                    <Image src='/vector2.png' priority alt="" style={{marginRight: '10px'}} width={30} height={30}/> 
+                    <Image src='/Vector2.png' priority alt="" style={{marginRight: '10px'}} width={30} height={30}/> 
                     Call Us
                 </h1>
                 <p>+91 1234567891</p>
             </div>
             <div>
                 <h1>
-                    <Image src='/vector3.png' priority alt="" style={{marginRight: '10px'}} width={30} height={30}/> 
+                    <Image src='/Vector3.png' priority alt="" style={{marginRight: '10px'}} width={30} height={30}/> 
                     Loaction
                 </h1>
                 <p>Ghaziabad, Uttar Pradesh</p>
             </div>
             <div>
                 <h1>
-                    <Image src='/vector4.png' priority alt="" style={{marginRight: '10px'}} width={30} height={30}/> 
+                    <Image src='/Vector4.png' priority alt="" style={{marginRight: '10px'}} width={30} height={30}/> 
                     Mail Us
                 </h1>
                 <p>info@markall.in</p>
