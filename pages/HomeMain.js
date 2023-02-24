@@ -16,7 +16,7 @@ const HomeMain = () => {
           <span>Get your customers with SEO, rank your business with email marketing, build sales leads</span>
           <div className={styles.btnDiv}>
             <button className={styles.btnGetStarted}>Get Started</button>
-            <button className={styles.watchDemo}><i className="fa fa-play"></i> Watch Demo</button>
+            <button className={styles.watchDemo}><i className={`fa fa-play`}></i> Watch Demo</button>
           </div>
         </div>
         <div className={styles.getStartedDiv2}>
@@ -42,7 +42,7 @@ const HomeMain = () => {
           <div className={styles.savePreciousTimeDiv}>
             <h1>Save precious time with automation</h1>
             <p>Lorem ipsum dolor sit amet consectetur. Sed id luctus posuere massa leo purus cras commodo. Volutpat massa fusce sit libero ut mollis risus.</p>
-            <Link href="#">Learn More <i className="fas fa-long-arrow-alt-right"></i></Link>
+            <Link href="#">Learn More <i className={`fas fa-long-arrow-alt-right`}></i></Link>
           </div>
           <div className={styles.savePreciousTimeImgDiv}>
             <Image src='/automation1.png' alt="" className={styles.marketingImg} width={578} height={386}/>
@@ -57,11 +57,11 @@ const HomeMain = () => {
           <h1>What our customers say about us</h1>
         </div>
         <div className={styles.happyCstmDescDiv}>
-          <Image src='/vector1.png' alt="" style={{'marginRight': '10px'}} width={60} height={60}/> 
+          <Image src='/vector1.png' alt="" style={{marginRight: '10px'}} width={60} height={60}/> 
           <div className={styles.happyCstmDescDiv1}>
             <p>Lorem ipsum dolor sit amet consectetur. In praesent ac sit scelerisque lacus. Faucibus tincidunt commodo mi.</p>
             <h1>Jane Doe</h1>
-            <p style={{'color': 'rgba(50, 88, 74, 0.7)'}}>Product Specialist, Lorem Co.</p>
+            <p style={{color: 'rgba(50, 88, 74, 0.7)'}}>Product Specialist, Lorem Co.</p>
           </div>
           
         </div>
