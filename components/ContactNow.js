@@ -4,8 +4,6 @@ import styles from '../styles/ContactNow.module.css';
 
 const ContactNow = () => {
 
-    // const host = "";
-    // const host = "";
     const [contactdata, setcontactdata] = useState({
         name: "",
         email: "",
