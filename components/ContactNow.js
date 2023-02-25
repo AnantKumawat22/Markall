@@ -16,7 +16,7 @@ const ContactNow = () => {
     const formSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch(`https://markall.vercel.app/api/contact`, {
+        const response = await fetch(`/api/contact`, {
             method: 'POST',
             body: JSON.stringify({ 
                 name: contactdata.name, 
