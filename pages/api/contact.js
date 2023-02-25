@@ -16,14 +16,6 @@ const handler = async (req, res) => {
       to: data.email,
       subject: "Markall user contact",
       html: `<p>${data.message}</p>`
-    }, (error, info) => {
-      if (err) {
-          res.status(400).json({ msg: error });
-          reject(err);
-      } else {
-          res.status(400).json({ msg: info });
-          resolve(info);
-      }
     });
 
     return res.status(200).json({ msg: 'Email Sent Successfully.' });
