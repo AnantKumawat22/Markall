@@ -13,8 +13,10 @@ const ContactNow = () => {
 
     const formSubmit = async (e) => {
         e.preventDefault();
+        // const host = "https://markall.vercel.app";
+        const host = "";
 
-        const response = await fetch(`https://markall.vercel.app/api/contact`, {
+        const response = await fetch(`${host}/api/contact`, {
             method: 'POST',
             body: JSON.stringify({ 
                 name: contactdata.name, 
@@ -27,7 +29,7 @@ const ContactNow = () => {
               Accept: "application/json"
             }
         });
-        // const data = await response.json();
+        const data = await response.json();
     }
 
     const inpChange = (e) => {

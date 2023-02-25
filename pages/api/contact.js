@@ -3,7 +3,7 @@
 import { mailOptions, transporter } from "@/config/nodemailer";
 
 const handler = async (req, res) => {
-  const data = JSON.parse(req.body);
+  const data = req.body;
   console.log(data);
   if(data.name == "" || data.email == "" || data.phnumber == "" || data.message == ""){
     return res.status(400).json({ msg: 'All fields are required.' });
