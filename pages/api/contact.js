@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 // import { mailOptions, transporter } from "@/config/nodemailer";
+import sgMail from '@sendgrid/mail';
 
 const handler = async (req, res) => {
   const data = req.body;
