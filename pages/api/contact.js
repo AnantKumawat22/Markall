@@ -10,7 +10,7 @@ const handler = async (req, res) => {
   }
 
   try {
-    const response = await transporter.sendMail({
+    await transporter.sendMail({
       ...mailOptions,
       to: data.email,
       subject: "Markall user contact",

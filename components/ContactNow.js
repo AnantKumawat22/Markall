@@ -27,7 +27,7 @@ const ContactNow = () => {
               Accept: "application/json"
             }
         });
-        const data = await response.json();
+        // const data = await response.json();
     }
 
     const inpChange = (e) => {
