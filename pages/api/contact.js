@@ -22,7 +22,8 @@ const handler = async (req, res) => {
       } else {
           console.log(info);
           resolve(info);
-      });
+      }}
+      );
     return res.status(200).json({ msg: 'Email Sent Successfully.' });
   } catch (error) {
     return res.status(400).json({ error: data, msg: error.message });
