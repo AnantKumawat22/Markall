@@ -13,8 +13,8 @@ const ContactNow = () => {
 
     const formSubmit = async (e) => {
         e.preventDefault();
-        // const host = "https://markall.vercel.app";
-        const host = "";
+        const host = "https://markall.vercel.app";
+        // const host = "";
 
         const response = await fetch(`${host}/api/contact`, {
             method: 'POST',
