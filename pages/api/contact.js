@@ -20,6 +20,7 @@ const handler = async (req, res) => {
 
     return res.status(200).json({ msg: 'Email Sent Successfully.' });
   } catch (error) {
+    console.log(error);
     return res.status(400).json({ error: data, msg: error.message });
   }
 }
