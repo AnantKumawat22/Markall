@@ -6,6 +6,8 @@
     flex-direction: row;
     padding: 0px 30px;
     align-items: center;
+    position: fixed;
+    z-index: 999;
     justify-content: space-between;
     background-color: black;
     color: white;
@@ -15,27 +17,51 @@
 .nav ul{
     list-style: none;
     display: flex;
+    width: 30%;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
-.nav ul li{
-    margin-right: 50px;
+.nav a{
+    text-decoration: none;
+    color: white;
     cursor: pointer;
+}
+
+.nav a:hover{
+    color: rgb(239, 239, 239);
 }
 
 .nav p{
     font-weight: bold;
     letter-spacing: 0.5px;
-    cursor: pointer;
 }
 
 .nav button{
     cursor: pointer;
     outline: none;
     border: none;
+    width: 150px;
     background-color: #7CEDA1;
     border-radius: 10px;
     padding: 10px 20px;
     font-weight: bold;
     font-size: 16px;
+}
+
+@media(max-width: 800px){
+    .nav ul{
+        width: 100%;
+    }
+    .nav{
+        padding: 20px 0px;
+        height: 130px;
+        flex-direction: column;
+    }
+    .nav p{
+        font-size: 20px;
+    }
+    .nav button{
+        display: none;
+    }
 }

@@ -4,24 +4,25 @@ import { mailOptions, transporter } from "@/config/nodemailer";
 
 const handler = async (req, res) => {
   const data = req.body;
-  console.log(data);
 
   if(data.name == "" || data.email == "" || data.phnumber == "" || data.message == ""){
-    return res.status(400).json({ msg: 'All fields are required.' });
+    return res.status(400).json({ msg: 'All fields are required.', success: "danger" });
   }
 
   try {
     await transporter.sendMail({
       ...mailOptions,
       to: data.email,
-      subject: "Markall user contact",
-      html: `<p>${data.message}</p>`
+      subject: "Markall User Contact",
+      html: `<h1>Markall</h1>
+            <h4>Name: ${data.name}.</h4>
+            <h4>Phone Number: ${data.phnumber}.</h4>
+            <p>${data.message}</p>`
     });
 
-    return res.status(200).json({ msg: 'Email Sent Successfully.' });
+    return res.status(200).json({ msg: 'Email Sent Successfully.', success: "success" });
   } catch (error) {
-    console.log(error);
-    return res.status(400).json({ error: data, msg: error.message });
+    return res.status(400).json({ msg: "Couldn't Send Email. Try after sometime.", success: "danger" });
   }
 }
 

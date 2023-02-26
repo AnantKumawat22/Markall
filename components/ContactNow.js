@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from 'next/image';
 import styles from '../styles/ContactNow.module.css';
 
-const ContactNow = () => {
+const ContactNow = (props) => {
 
+    const [loaderstate, setLoaderState] = useState(false);
     const [contactdata, setcontactdata] = useState({
         name: "",
         email: "",
@@ -11,10 +12,14 @@ const ContactNow = () => {
         message: ""
     });
 
+    useEffect(() => {
+        console.log("effect.......");
+    }, [loaderstate]);
+
     const formSubmit = async (e) => {
+        setLoaderState(true);
         e.preventDefault();
         const host = "https://markall.vercel.app";
-        // const host = "";
 
         const response = await fetch(`${host}/api/contact`, {
             method: 'POST',
@@ -30,6 +35,16 @@ const ContactNow = () => {
             }
         });
         const data = await response.json();
+        if(data){
+            setLoaderState(false);
+        }
+        props.showAlert(data.msg, data.success);
+        setcontactdata({
+            name: "",
+            email: "",
+            phnumber: "",
+            message: ""
+        });
     }
 
     const inpChange = (e) => {
@@ -72,7 +87,14 @@ const ContactNow = () => {
                 <input value={contactdata.email} onChange={inpChange} type="email" name="email" id="email" placeholder='Email *' />
                 <input value={contactdata.phnumber} onChange={inpChange} type="tel" name="phnumber" id="phnumber" placeholder='Phone *' />
                 <input value={contactdata.message} onChange={inpChange} type="text" name="message" id="message" placeholder='Message' />
-                <button type="submit" className={styles.btnSubmitForm}>Submit Form</button>
+                {
+                    loaderstate ? 
+                    <button type="submit" className={styles.btnSubmitForm}>
+                        <Image src='/loader.gif' priority alt="Loader" width={30} height={30}/>
+                    </button> : 
+                    <button type="submit" className={styles.btnSubmitForm}>Submit Form</button>
+                }
+                
             </form>
         </div>
       </div>

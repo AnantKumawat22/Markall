@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Homemain.module.css';
 import ContactNow from '../components/ContactNow';
 import Navbar from '../components/Navbar.js';
+import Alert from '@/components/Alert';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const HomeMain = () => {
+
+  //Alert
+  const [alert, setAlert] = useState(null);
+
+  const showAlert = (msg, type) => {
+    setAlert({
+      message : msg, type
+    });
+
+    setTimeout(() => {
+      setAlert(null);
+    }, 1500);
+  }
+
   return (
     <>
       <Navbar/>
+      <Alert alert={alert}/>
 
       <div className={styles.getStartedDiv}>
         <div className={styles.getStartedDiv1}>
@@ -67,7 +83,7 @@ const HomeMain = () => {
         </div>
       </div>
 
-      <ContactNow/>
+      <ContactNow showAlert={showAlert}/>
     </>
   )
 }

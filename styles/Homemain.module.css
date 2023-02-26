@@ -40,6 +40,7 @@
     cursor: pointer;
     outline: none;
     border: none;
+    width: 130px;
     background-color: #7CEDA1;
     border-radius: 10px;
     padding: 10px 20px;
@@ -52,6 +53,7 @@
     cursor: pointer;
     outline: none;
     border: none;
+    width: 150px;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 10px;
     border: 2px solid white;
@@ -169,4 +171,65 @@
 
 .happyCstmDescDiv1 p{
     margin-bottom: 20px;
+}
+
+@media(max-width: 1140px){
+    .getStartedDiv p, .savePreciousTimeDiv h1, .knowYourAudienceDiv h1, .happyCstmDiv1 h1,
+    .happyCstmDescDiv1 h1{
+        font-size: 30px;
+    }
+    .getStartedDiv span, .knowYourAudienceDiv p, .DesciptionDiv p, .savePreciousTimeDiv p, .happyCstmDiv1 p
+    , .happyCstmDescDiv1 p{
+        font-size: 16px;
+    }
+    .marketingImg{
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+    }
+}
+
+@media(max-width: 750px){
+    .getStartedDiv {
+        padding: 150px 30px;
+        flex-wrap: wrap-reverse;
+    }
+    .happyCstmDiv{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 40px 0px;
+        min-height: 580px;
+    }
+    .happyCstmDescDiv1{
+        padding-top: 40px;
+    }
+    .happyCstmDescDiv{
+        align-items: start;
+    }
+    .getStartedDiv1, .getStartedDiv2 .savePreciousTimeDiv{
+        width: 100%;
+        margin: 40px 0px;
+    }
+    .ourFeaturesDiv2{
+        min-height: 600px;
+        flex-wrap: wrap-reverse;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .ourFeaturesDiv{
+        padding: 20px 20px;
+    }
+    .ourFeaturesDiv1{
+        min-height: 400px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .knowYourAudienceDiv, .DesciptionDiv, .savePreciousTimeDiv, .savePreciousTimeImgDiv, .happyCstmDiv1,
+    .happyCstmDescDiv {
+        width: 90%;
+    }
 }

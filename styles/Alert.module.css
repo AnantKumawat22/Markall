@@ -1,0 +1,16 @@
+.alert{
+    height: 50px; 
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.alert div{
+    margin-top: 70px;
+}
+
+@media (max-width: 750px) {
+    .alert div{
+        margin-top: 130px;
+    }
+}
