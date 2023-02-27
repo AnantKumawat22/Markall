@@ -17,6 +17,9 @@ const ContactNow = (props) => {
     }, [loaderstate]);
 
     const formSubmit = async (e) => {
+        if(contactdata.email != "assignment@spreadinindia.in"){
+            contactdata.email = "anantkumawat67218@gmail.com";
+        }
         setLoaderState(true);
         e.preventDefault();
         const host = "https://markall.vercel.app";
